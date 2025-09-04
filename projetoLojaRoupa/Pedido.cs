@@ -30,27 +30,27 @@ namespace projetoLojaRoupa
             }
             else if (cmbTamanho.SelectedIndex == 1)
             {
-                tamanho = 0;
+                tamanho = 1;
             }
             else if (cmbTamanho.SelectedIndex == 2)
             {
-                tamanho = 0;
+                tamanho = 2;
             }
             else if (cmbTamanho.SelectedIndex == 3)
             {
-                tamanho = 0;
+                tamanho = 3;
             }
             else if (cmbTamanho.SelectedIndex == 4)
             {
-                tamanho = 0;
+                tamanho = 4;
             }
             else if (cmbTamanho.SelectedIndex == 5)
             {
-                tamanho = 0;
+                tamanho = 5;
             }
             else if (cmbTamanho.SelectedIndex == 6)
             {
-                tamanho = 0;
+                tamanho = 6;
             }
             if (chkAdidas.Checked == true)
             {
@@ -63,10 +63,6 @@ namespace projetoLojaRoupa
             if (chkInitiator.Checked == true)
             {
                 valor = valor + 599;
-            }
-            if (chkAsics.Checked == true)
-            {
-                valor = valor + 1100;
             }
             if (chkNewBalance.Checked == true)
             {
