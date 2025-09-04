@@ -46,22 +46,22 @@
             this.chkInitiator = new System.Windows.Forms.CheckBox();
             this.chkAsics = new System.Windows.Forms.CheckBox();
             this.chkAdidas = new System.Windows.Forms.CheckBox();
-            this.picNocta = new System.Windows.Forms.PictureBox();
-            this.picInitiator = new System.Windows.Forms.PictureBox();
-            this.picAsics = new System.Windows.Forms.PictureBox();
-            this.picAdidas = new System.Windows.Forms.PictureBox();
-            this.picPuma = new System.Windows.Forms.PictureBox();
-            this.picNewBalance = new System.Windows.Forms.PictureBox();
             this.chkNewBalance = new System.Windows.Forms.CheckBox();
             this.chkPuma = new System.Windows.Forms.CheckBox();
+            this.picNewBalance = new System.Windows.Forms.PictureBox();
+            this.picAdidas = new System.Windows.Forms.PictureBox();
+            this.picInitiator = new System.Windows.Forms.PictureBox();
+            this.picPuma = new System.Windows.Forms.PictureBox();
+            this.picAsics = new System.Windows.Forms.PictureBox();
+            this.picNocta = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
             this.grpEscolhaTenis.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picNocta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picInitiator)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAsics)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdidas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPuma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNewBalance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdidas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picInitiator)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPuma)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAsics)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNocta)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvPedidos
@@ -84,7 +84,7 @@
             // lblQuantidade
             // 
             this.lblQuantidade.AutoSize = true;
-            this.lblQuantidade.Location = new System.Drawing.Point(504, 38);
+            this.lblQuantidade.Location = new System.Drawing.Point(489, 38);
             this.lblQuantidade.Name = "lblQuantidade";
             this.lblQuantidade.Size = new System.Drawing.Size(78, 13);
             this.lblQuantidade.TabIndex = 2;
@@ -227,55 +227,6 @@
             this.chkAdidas.Text = "Adidas Harden 9";
             this.chkAdidas.UseVisualStyleBackColor = true;
             // 
-            // picNocta
-            // 
-            this.picNocta.Location = new System.Drawing.Point(12, 33);
-            this.picNocta.Name = "picNocta";
-            this.picNocta.Size = new System.Drawing.Size(80, 89);
-            this.picNocta.TabIndex = 0;
-            this.picNocta.TabStop = false;
-            // 
-            // picInitiator
-            // 
-            this.picInitiator.Location = new System.Drawing.Point(12, 159);
-            this.picInitiator.Name = "picInitiator";
-            this.picInitiator.Size = new System.Drawing.Size(80, 89);
-            this.picInitiator.TabIndex = 1;
-            this.picInitiator.TabStop = false;
-            // 
-            // picAsics
-            // 
-            this.picAsics.Location = new System.Drawing.Point(150, 33);
-            this.picAsics.Name = "picAsics";
-            this.picAsics.Size = new System.Drawing.Size(80, 89);
-            this.picAsics.TabIndex = 2;
-            this.picAsics.TabStop = false;
-            // 
-            // picAdidas
-            // 
-            this.picAdidas.Image = ((System.Drawing.Image)(resources.GetObject("picAdidas.Image")));
-            this.picAdidas.Location = new System.Drawing.Point(150, 159);
-            this.picAdidas.Name = "picAdidas";
-            this.picAdidas.Size = new System.Drawing.Size(80, 89);
-            this.picAdidas.TabIndex = 3;
-            this.picAdidas.TabStop = false;
-            // 
-            // picPuma
-            // 
-            this.picPuma.Location = new System.Drawing.Point(281, 33);
-            this.picPuma.Name = "picPuma";
-            this.picPuma.Size = new System.Drawing.Size(80, 89);
-            this.picPuma.TabIndex = 4;
-            this.picPuma.TabStop = false;
-            // 
-            // picNewBalance
-            // 
-            this.picNewBalance.Location = new System.Drawing.Point(281, 159);
-            this.picNewBalance.Name = "picNewBalance";
-            this.picNewBalance.Size = new System.Drawing.Size(80, 89);
-            this.picNewBalance.TabIndex = 5;
-            this.picNewBalance.TabStop = false;
-            // 
             // chkNewBalance
             // 
             this.chkNewBalance.AutoSize = true;
@@ -295,6 +246,55 @@
             this.chkPuma.TabIndex = 7;
             this.chkPuma.Text = "Puma 180";
             this.chkPuma.UseVisualStyleBackColor = true;
+            // 
+            // picNewBalance
+            // 
+            this.picNewBalance.Location = new System.Drawing.Point(281, 159);
+            this.picNewBalance.Name = "picNewBalance";
+            this.picNewBalance.Size = new System.Drawing.Size(80, 89);
+            this.picNewBalance.TabIndex = 5;
+            this.picNewBalance.TabStop = false;
+            // 
+            // picAdidas
+            // 
+            this.picAdidas.Image = ((System.Drawing.Image)(resources.GetObject("picAdidas.Image")));
+            this.picAdidas.Location = new System.Drawing.Point(150, 159);
+            this.picAdidas.Name = "picAdidas";
+            this.picAdidas.Size = new System.Drawing.Size(80, 89);
+            this.picAdidas.TabIndex = 3;
+            this.picAdidas.TabStop = false;
+            // 
+            // picInitiator
+            // 
+            this.picInitiator.Location = new System.Drawing.Point(12, 159);
+            this.picInitiator.Name = "picInitiator";
+            this.picInitiator.Size = new System.Drawing.Size(80, 89);
+            this.picInitiator.TabIndex = 1;
+            this.picInitiator.TabStop = false;
+            // 
+            // picPuma
+            // 
+            this.picPuma.Location = new System.Drawing.Point(281, 33);
+            this.picPuma.Name = "picPuma";
+            this.picPuma.Size = new System.Drawing.Size(80, 89);
+            this.picPuma.TabIndex = 4;
+            this.picPuma.TabStop = false;
+            // 
+            // picAsics
+            // 
+            this.picAsics.Location = new System.Drawing.Point(150, 33);
+            this.picAsics.Name = "picAsics";
+            this.picAsics.Size = new System.Drawing.Size(80, 89);
+            this.picAsics.TabIndex = 2;
+            this.picAsics.TabStop = false;
+            // 
+            // picNocta
+            // 
+            this.picNocta.Location = new System.Drawing.Point(12, 33);
+            this.picNocta.Name = "picNocta";
+            this.picNocta.Size = new System.Drawing.Size(80, 89);
+            this.picNocta.TabIndex = 0;
+            this.picNocta.TabStop = false;
             // 
             // Pedido
             // 
@@ -316,15 +316,16 @@
             this.Controls.Add(this.dgvPedidos);
             this.Name = "Pedido";
             this.Text = "Pedido";
+            this.Load += new System.EventHandler(this.Pedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).EndInit();
             this.grpEscolhaTenis.ResumeLayout(false);
             this.grpEscolhaTenis.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picNocta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picInitiator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAsics)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdidas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPuma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNewBalance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdidas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picInitiator)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPuma)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAsics)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNocta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,13 +350,13 @@
         private System.Windows.Forms.CheckBox chkInitiator;
         private System.Windows.Forms.CheckBox chkNocta;
         private System.Windows.Forms.CheckBox chkAdidas;
-        private System.Windows.Forms.PictureBox picAdidas;
-        private System.Windows.Forms.PictureBox picAsics;
-        private System.Windows.Forms.PictureBox picInitiator;
-        private System.Windows.Forms.PictureBox picNocta;
         private System.Windows.Forms.CheckBox chkPuma;
         private System.Windows.Forms.CheckBox chkNewBalance;
         private System.Windows.Forms.PictureBox picNewBalance;
         private System.Windows.Forms.PictureBox picPuma;
+        private System.Windows.Forms.PictureBox picAdidas;
+        private System.Windows.Forms.PictureBox picAsics;
+        private System.Windows.Forms.PictureBox picInitiator;
+        private System.Windows.Forms.PictureBox picNocta;
     }
 }

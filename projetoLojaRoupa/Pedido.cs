@@ -21,5 +21,10 @@ namespace projetoLojaRoupa
         {
 
         }
+
+        private void Pedido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
