@@ -54,6 +54,10 @@
             this.picPuma = new System.Windows.Forms.PictureBox();
             this.picAsics = new System.Windows.Forms.PictureBox();
             this.picNocta = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblPesquisar = new System.Windows.Forms.Label();
+            this.lblCodigo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
             this.grpEscolhaTenis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNewBalance)).BeginInit();
@@ -67,7 +71,7 @@
             // dgvPedidos
             // 
             this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPedidos.Location = new System.Drawing.Point(422, 137);
+            this.dgvPedidos.Location = new System.Drawing.Point(419, 170);
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.Size = new System.Drawing.Size(349, 158);
             this.dgvPedidos.TabIndex = 0;
@@ -122,16 +126,17 @@
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(422, 324);
+            this.btnNovo.Location = new System.Drawing.Point(419, 357);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(75, 38);
             this.btnNovo.TabIndex = 7;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(514, 324);
+            this.btnSalvar.Location = new System.Drawing.Point(511, 357);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 38);
             this.btnSalvar.TabIndex = 8;
@@ -140,7 +145,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(604, 324);
+            this.btnCalcular.Location = new System.Drawing.Point(601, 357);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(75, 38);
             this.btnCalcular.TabIndex = 9;
@@ -150,7 +155,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(696, 324);
+            this.btnSair.Location = new System.Drawing.Point(693, 357);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 38);
             this.btnSair.TabIndex = 10;
@@ -296,11 +301,48 @@
             this.picNocta.TabIndex = 0;
             this.picNocta.TabStop = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(467, 137);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 13;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(627, 137);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 14;
+            // 
+            // lblPesquisar
+            // 
+            this.lblPesquisar.AutoSize = true;
+            this.lblPesquisar.Location = new System.Drawing.Point(635, 121);
+            this.lblPesquisar.Name = "lblPesquisar";
+            this.lblPesquisar.Size = new System.Drawing.Size(69, 13);
+            this.lblPesquisar.TabIndex = 15;
+            this.lblPesquisar.Text = "PESQUISAR";
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Location = new System.Drawing.Point(464, 121);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(49, 13);
+            this.lblCodigo.TabIndex = 16;
+            this.lblCodigo.Text = "CODIGO";
+            // 
             // Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblCodigo);
+            this.Controls.Add(this.lblPesquisar);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.grpEscolhaTenis);
             this.Controls.Add(this.cmbTamanho);
             this.Controls.Add(this.btnSair);
@@ -358,5 +400,9 @@
         private System.Windows.Forms.PictureBox picAsics;
         private System.Windows.Forms.PictureBox picInitiator;
         private System.Windows.Forms.PictureBox picNocta;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lblPesquisar;
+        private System.Windows.Forms.Label lblCodigo;
     }
 }
