@@ -137,7 +137,7 @@ namespace projetoLojaRoupa
                 try
                 {
                     //inserindo dados no banco de dados
-                    string sql = "insert into tbPedido(tamanhoTenis,valorTenis,valorQuantidade,valorTotal) values(@tmtenis,@vtenis,@quantidade,@total");
+                    string sql = "insert into tbPedido(tamanhoTenis,valorTenis,valorQuantidade,valorTotal) values(@tmtenis,@vtenis,@quantidade,@total)";
                     MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
                     cmd.Parameters.Add("@tmtenis", MySqlDbType.Text).Value = cmbTamanho.Text;
                     cmd.Parameters.Add("@vtenis", MySqlDbType.Text).Value = txtValor.Text;
@@ -180,6 +180,41 @@ namespace projetoLojaRoupa
             {
                 MessageBox.Show("Erro ao clicar" + error);
             }
+        }
+
+        private void txtPesquisar_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPesquisar.Text != "")
+            {
+                try
+                {
+                    con.ConnectarBD();
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.CommandText = "select * from tbPedido";
+
+                    cmd.Connection = con.ConnectarBD();
+                    MySqlDataAdapter da = new MySqlDataAdapter();
+                    DataTable dt = new DataTable();
+                    da.SelectCommand = cmd;
+                    da.Fill(dt);
+                    dgvPedidos.DataSource = dt;
+                    con.DesConnectarBD();
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.Message);
+                }
+            }
+            else
+            {
+                //deixa o datagrid limpo
+                dgvPedidos.DataSource = null;
+            }
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
