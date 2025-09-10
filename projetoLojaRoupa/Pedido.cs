@@ -111,5 +111,29 @@ namespace projetoLojaRoupa
             txtValor.Clear();
             cmbTamanho.SelectedIndex = 0;
         }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            //verifica os campos
+            if (txtValor.Text == "")
+            {
+                MessageBox.Show("Campo Obrigatório");
+                txtValor.Focus();
+            }
+            else if (txtTotalPagar.Text == "")
+            {
+                MessageBox.Show("Campo Obrigatório");
+                txtTotalPagar.Focus();
+            }
+            else if (txtQuantidade.Text == "")
+            {
+                MessageBox.Show("Campo Obrigatório");
+                txtQuantidade.Focus();
+            }
+            else
+            {
+
+            }
+        }
     }
 }
