@@ -132,7 +132,30 @@ namespace projetoLojaRoupa
             }
             else
             {
+                //tratamento de erros
+                try
+                {
+                    //inserindo dados no banco de dados
+                    string sql = "insert into tbPedido(tamanhoTenis,valorTenis,valorQuantidade,valorTotal) values(@tmtenis,@vtenis,@quantidade,@total");
+                    MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD);
+                    cmd.Parameter.Add("@tmtenis", MySqlDbType.Text).Value = cmbTamanho.Text;
+                    cmd.Parameter.Add("@vtenis", MySqlDbType.Text).Value =txtValor.Text;
+                    cmd.Parameter.Add("@quantidade", MySqlDbType.Text).Value = txtQuantidade.Text;
+                    cmd.Parameter.Add("total", MySqlDbType.Text).Value = txtTotalPagar.Text;
+                    cmd.ExecuteNonQuery();
 
+                    MessageBox.Show("Dados cadastrados com Sucesso !!!");
+                    cmbTamanho.Text = "";
+                    txtValor.Text = "";
+                    txtQuantidade.Text = "";
+                    txtTotalPagar.Text = "";
+                    cmbTamanho.Focus();
+                    con.DesConnectarBD();
+                }
+                catch (Exception erro)
+                {
+                    
+                }
             }
         }
     }
