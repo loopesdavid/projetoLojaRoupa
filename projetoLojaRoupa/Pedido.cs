@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -137,11 +138,11 @@ namespace projetoLojaRoupa
                 {
                     //inserindo dados no banco de dados
                     string sql = "insert into tbPedido(tamanhoTenis,valorTenis,valorQuantidade,valorTotal) values(@tmtenis,@vtenis,@quantidade,@total");
-                    MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD);
-                    cmd.Parameter.Add("@tmtenis", MySqlDbType.Text).Value = cmbTamanho.Text;
-                    cmd.Parameter.Add("@vtenis", MySqlDbType.Text).Value =txtValor.Text;
-                    cmd.Parameter.Add("@quantidade", MySqlDbType.Text).Value = txtQuantidade.Text;
-                    cmd.Parameter.Add("total", MySqlDbType.Text).Value = txtTotalPagar.Text;
+                    MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
+                    cmd.Parameters.Add("@tmtenis", MySqlDbType.Text).Value = cmbTamanho.Text;
+                    cmd.Parameters.Add("@vtenis", MySqlDbType.Text).Value =txtValor.Text;
+                    cmd.Parameters.Add("@quantidade", MySqlDbType.Text).Value = txtQuantidade.Text;
+                    cmd.Parameters.Add("total", MySqlDbType.Text).Value = txtTotalPagar.Text;
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Dados cadastrados com Sucesso !!!");
@@ -154,7 +155,7 @@ namespace projetoLojaRoupa
                 }
                 catch (Exception erro)
                 {
-                    
+                    MessageBox.Show(erro.Message);
                 }
             }
         }
