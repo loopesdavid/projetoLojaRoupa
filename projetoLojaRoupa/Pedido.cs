@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,57 +25,36 @@ namespace projetoLojaRoupa
         {
             // declarando as variaveis
             double tamanho = 0, valor = 0, valorTotal = 0;
+            int quantidade = 0;
 
-            if (cmbTamanho.SelectedIndex == 0)
-            {
-                tamanho = 0;
-            }
-            else if (cmbTamanho.SelectedIndex == 1)
-            {
-                tamanho = 1;
-            }
-            else if (cmbTamanho.SelectedIndex == 2)
-            {
-                tamanho = 2;
-            }
-            else if (cmbTamanho.SelectedIndex == 3)
-            {
-                tamanho = 3;
-            }
-            else if (cmbTamanho.SelectedIndex == 4)
-            {
-                tamanho = 4;
-            }
-            else if (cmbTamanho.SelectedIndex == 5)
-            {
-                tamanho = 5;
-            }
-            else if (cmbTamanho.SelectedIndex == 6)
-            {
-                tamanho = 6;
-            }
             if (chkAdidas.Checked == true)
             {
+                quantidade++;
                 valor = valor + 1000;
             }
             if (chkAsics.Checked == true)
             {
+                quantidade++;
                 valor = valor + 900;
             }
             if (chkInitiator.Checked == true)
             {
+                quantidade++;
                 valor = valor + 599;
             }
             if (chkNewBalance.Checked == true)
             {
+                quantidade++;
                 valor = valor + 1000;
             }
             if (chkNocta.Checked == true)
             {
+                quantidade++;
                 valor = valor + 2000;
             }
             if (chkPuma.Checked == true)
             {
+                quantidade++;
                 valor = valor + 699;
             }
             else
@@ -83,7 +63,7 @@ namespace projetoLojaRoupa
             }
             valorTotal = valor + tamanho;
             txtValor.Text = Convert.ToString(valor);
-            txtQuantidade.Text = Convert.ToString(tamanho);
+            txtQuantidade.Text = Convert.ToString(quantidade);
             txtTotalPagar.Text = Convert.ToString(valorTotal);
         }
 
