@@ -384,7 +384,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(1182, 673);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblPesquisar);
             this.Controls.Add(this.txtPesquisar);
