@@ -54,8 +54,8 @@
             this.picAsics = new System.Windows.Forms.PictureBox();
             this.picInitiator = new System.Windows.Forms.PictureBox();
             this.picNocta = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.lblPesquisar = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).BeginInit();
@@ -75,6 +75,7 @@
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.Size = new System.Drawing.Size(349, 158);
             this.dgvPedidos.TabIndex = 0;
+            this.dgvPedidos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvPedidos_MouseDoubleClick);
             // 
             // lblValor
             // 
@@ -302,20 +303,20 @@
             this.picNocta.TabIndex = 0;
             this.picNocta.TabStop = false;
             // 
-            // textBox1
+            // txtCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(467, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 13;
+            this.txtCodigo.Location = new System.Drawing.Point(467, 137);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.ReadOnly = true;
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 13;
             // 
-            // textBox2
+            // txtPesquisar
             // 
-            this.textBox2.Location = new System.Drawing.Point(627, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 14;
+            this.txtPesquisar.Location = new System.Drawing.Point(627, 137);
+            this.txtPesquisar.Name = "txtPesquisar";
+            this.txtPesquisar.Size = new System.Drawing.Size(100, 20);
+            this.txtPesquisar.TabIndex = 14;
             // 
             // lblPesquisar
             // 
@@ -342,8 +343,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblPesquisar);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPesquisar);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.grpEscolhaTenis);
             this.Controls.Add(this.cmbTamanho);
             this.Controls.Add(this.btnSair);
@@ -401,8 +402,8 @@
         private System.Windows.Forms.PictureBox picAsics;
         private System.Windows.Forms.PictureBox picInitiator;
         private System.Windows.Forms.PictureBox picNocta;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtPesquisar;
         private System.Windows.Forms.Label lblPesquisar;
         private System.Windows.Forms.Label lblCodigo;
     }

@@ -140,7 +140,7 @@ namespace projetoLojaRoupa
                     string sql = "insert into tbPedido(tamanhoTenis,valorTenis,valorQuantidade,valorTotal) values(@tmtenis,@vtenis,@quantidade,@total");
                     MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
                     cmd.Parameters.Add("@tmtenis", MySqlDbType.Text).Value = cmbTamanho.Text;
-                    cmd.Parameters.Add("@vtenis", MySqlDbType.Text).Value =txtValor.Text;
+                    cmd.Parameters.Add("@vtenis", MySqlDbType.Text).Value = txtValor.Text;
                     cmd.Parameters.Add("@quantidade", MySqlDbType.Text).Value = txtQuantidade.Text;
                     cmd.Parameters.Add("total", MySqlDbType.Text).Value = txtTotalPagar.Text;
                     cmd.ExecuteNonQuery();
@@ -157,6 +157,28 @@ namespace projetoLojaRoupa
                 {
                     MessageBox.Show(erro.Message);
                 }
+            }
+        }
+
+        private void dgvPedidos_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            CarregarPedidos();
+        }
+
+        //METODO QUE VAI CARREGAR AS INFORMAÇÕES NO DATA GRID
+        public void CarregarPedidos()
+        {
+            try
+            {
+                txtCodigo.Text = dgvPedidos.SelectedRows[0].Cells[0].Value.ToString();
+                cmbTamanho.Text = dgvPedidos.SelectedRows[0].Cells[1].Value.ToString();
+                txtValor.Text = dgvPedidos.SelectedRows[0].Cells[2].Value.ToString();
+                txtQuantidade.Text = dgvPedidos.SelectedRows[0].Cells[3].Value.ToString();
+                txtTotalPagar.Text = dgvPedidos.SelectedRows[0].Cells[4].Value.ToString();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Erro ao clicar" + error);
             }
         }
     }
