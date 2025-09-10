@@ -113,30 +113,30 @@ namespace projetoLojaRoupa
             }
             else
             {
-                //tratamento de erros
-                try
-                {
-                    //inserindo dados no banco de dados
-                    string sql = "insert into tbPedido(tamanhoTenis,valorTenis,valorQuantidade,valorTotal) values(@tmtenis,@vtenis,@quantidade,@total)";
-                    MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
-                    cmd.Parameters.Add("@tmtenis", MySqlDbType.Text).Value = cmbTamanho.Text;
-                    cmd.Parameters.Add("@vtenis", MySqlDbType.Text).Value = txtValor.Text;
-                    cmd.Parameters.Add("@quantidade", MySqlDbType.Text).Value = txtQuantidade.Text;
-                    cmd.Parameters.Add("total", MySqlDbType.Text).Value = txtTotalPagar.Text;
-                    cmd.ExecuteNonQuery();
+                //inserindo dados no banco de dados
+                string sql = "insert into tbPedido(tamanhoTenis,valorTenis,valorQuantidade,valorTotal) values(@tamanho,@vtenis,@vquantidade,@total)";
+                MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
+                cmd.Parameters.Add("@tamanho", MySqlDbType.Text).Value = cmbTamanho.Text;
+                cmd.Parameters.Add("@vtenis", MySqlDbType.Text).Value = txtValor.Text;
+                cmd.Parameters.Add("@vquantidade", MySqlDbType.Text).Value = txtQuantidade.Text;
+                cmd.Parameters.Add("@total", MySqlDbType.Text).Value = txtTotalPagar.Text;
+                cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Dados cadastrados com Sucesso !!!");
-                    cmbTamanho.Text = "";
-                    txtValor.Text = "";
-                    txtQuantidade.Text = "";
-                    txtTotalPagar.Text = "";
-                    cmbTamanho.Focus();
-                    con.DesConnectarBD();
-                }
-                catch (Exception erro)
-                {
-                    MessageBox.Show(erro.Message);
-                }
+                MessageBox.Show("Dados cadstrados com sucesso");
+                cmbTamanho.Text = "";
+                txtValor.Text = "";
+                txtQuantidade.Text = "";
+                txtTotalPagar.Text = "";
+                cmbTamanho.Focus();
+                con.DesConnectarBD();
+
+                MessageBox.Show("Dados cadastrados com Sucesso !!!");
+
+                cmbTamanho.Text = "";
+                txtValor.Clear();
+                txtQuantidade.Clear();
+                txtTotalPagar.Clear();
+                cmbTamanho.Focus();
             }
         }
 
