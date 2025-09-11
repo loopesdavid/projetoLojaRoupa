@@ -83,6 +83,7 @@
             // lblValor
             // 
             this.lblValor.AutoSize = true;
+            this.lblValor.BackColor = System.Drawing.Color.Transparent;
             this.lblValor.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValor.Location = new System.Drawing.Point(622, 54);
             this.lblValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -94,6 +95,7 @@
             // lblQuantidade
             // 
             this.lblQuantidade.AutoSize = true;
+            this.lblQuantidade.BackColor = System.Drawing.Color.Transparent;
             this.lblQuantidade.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuantidade.Location = new System.Drawing.Point(799, 54);
             this.lblQuantidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -105,6 +107,7 @@
             // lblTotalPagar
             // 
             this.lblTotalPagar.AutoSize = true;
+            this.lblTotalPagar.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalPagar.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPagar.Location = new System.Drawing.Point(989, 54);
             this.lblTotalPagar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -384,6 +387,7 @@
             // lblPesquisar
             // 
             this.lblPesquisar.AutoSize = true;
+            this.lblPesquisar.BackColor = System.Drawing.Color.Transparent;
             this.lblPesquisar.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPesquisar.Location = new System.Drawing.Point(944, 178);
             this.lblPesquisar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -395,6 +399,7 @@
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
+            this.lblCodigo.BackColor = System.Drawing.Color.Transparent;
             this.lblCodigo.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.Location = new System.Drawing.Point(665, 178);
             this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -408,6 +413,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 673);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblPesquisar);
@@ -426,9 +432,11 @@
             this.Controls.Add(this.lblQuantidade);
             this.Controls.Add(this.lblValor);
             this.Controls.Add(this.dgvPedidos);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Pedido";
-            this.Text = "Pedido";
+            this.Text = "Opium: Pedido";
             this.Load += new System.EventHandler(this.Pedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedidos)).EndInit();
             this.grpEscolhaTenis.ResumeLayout(false);
