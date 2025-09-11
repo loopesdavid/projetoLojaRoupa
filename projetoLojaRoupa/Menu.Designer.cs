@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(499, 143);
+            this.btnEntrar.Font = new System.Drawing.Font("Old English Text MT", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.Location = new System.Drawing.Point(95, 210);
             this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(169, 78);
+            this.btnEntrar.Size = new System.Drawing.Size(195, 88);
             this.btnEntrar.TabIndex = 0;
             this.btnEntrar.Text = "Realizar Pedido";
             this.btnEntrar.UseVisualStyleBackColor = true;
@@ -44,9 +46,10 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(499, 282);
+            this.btnSair.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(143, 304);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(169, 78);
+            this.btnSair.Size = new System.Drawing.Size(93, 37);
             this.btnSair.TabIndex = 1;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -56,7 +59,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(377, 417);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnEntrar);
             this.Name = "Menu";

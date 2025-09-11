@@ -206,5 +206,10 @@ namespace projetoLojaRoupa
                 Application.Exit();
             }
         }
+
+        private void grpEscolhaTenis_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

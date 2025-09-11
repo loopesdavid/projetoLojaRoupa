@@ -71,74 +71,82 @@
             // dgvPedidos
             // 
             this.dgvPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPedidos.Location = new System.Drawing.Point(559, 209);
+            this.dgvPedidos.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.dgvPedidos.Location = new System.Drawing.Point(563, 254);
             this.dgvPedidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.RowHeadersWidth = 51;
-            this.dgvPedidos.Size = new System.Drawing.Size(465, 194);
+            this.dgvPedidos.Size = new System.Drawing.Size(575, 267);
             this.dgvPedidos.TabIndex = 0;
             this.dgvPedidos.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvPedidos_MouseDoubleClick);
             // 
             // lblValor
             // 
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(495, 47);
+            this.lblValor.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValor.Location = new System.Drawing.Point(622, 54);
             this.lblValor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(52, 16);
+            this.lblValor.Size = new System.Drawing.Size(56, 24);
             this.lblValor.TabIndex = 1;
-            this.lblValor.Text = "VALOR";
+            this.lblValor.Text = "Valor";
             // 
             // lblQuantidade
             // 
             this.lblQuantidade.AutoSize = true;
-            this.lblQuantidade.Location = new System.Drawing.Point(652, 47);
+            this.lblQuantidade.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantidade.Location = new System.Drawing.Point(799, 54);
             this.lblQuantidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuantidade.Name = "lblQuantidade";
-            this.lblQuantidade.Size = new System.Drawing.Size(96, 16);
+            this.lblQuantidade.Size = new System.Drawing.Size(98, 24);
             this.lblQuantidade.TabIndex = 2;
-            this.lblQuantidade.Text = "QUANTIDADE";
+            this.lblQuantidade.Text = "Quantidade";
             // 
             // lblTotalPagar
             // 
             this.lblTotalPagar.AutoSize = true;
-            this.lblTotalPagar.Location = new System.Drawing.Point(847, 47);
+            this.lblTotalPagar.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPagar.Location = new System.Drawing.Point(989, 54);
             this.lblTotalPagar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalPagar.Name = "lblTotalPagar";
-            this.lblTotalPagar.Size = new System.Drawing.Size(113, 16);
+            this.lblTotalPagar.Size = new System.Drawing.Size(126, 24);
             this.lblTotalPagar.TabIndex = 3;
-            this.lblTotalPagar.Text = "TOTAL A PAGAR";
+            this.lblTotalPagar.Text = "Total a Pagar";
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(460, 81);
+            this.txtValor.Location = new System.Drawing.Point(563, 81);
             this.txtValor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtValor.Multiline = true;
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(132, 22);
+            this.txtValor.Size = new System.Drawing.Size(168, 40);
             this.txtValor.TabIndex = 4;
             // 
             // txtTotalPagar
             // 
-            this.txtTotalPagar.Location = new System.Drawing.Point(836, 81);
+            this.txtTotalPagar.Location = new System.Drawing.Point(970, 81);
             this.txtTotalPagar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotalPagar.Multiline = true;
             this.txtTotalPagar.Name = "txtTotalPagar";
-            this.txtTotalPagar.Size = new System.Drawing.Size(132, 22);
+            this.txtTotalPagar.Size = new System.Drawing.Size(168, 40);
             this.txtTotalPagar.TabIndex = 5;
             // 
             // txtQuantidade
             // 
-            this.txtQuantidade.Location = new System.Drawing.Point(643, 81);
+            this.txtQuantidade.Location = new System.Drawing.Point(767, 81);
             this.txtQuantidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtQuantidade.Multiline = true;
             this.txtQuantidade.Name = "txtQuantidade";
-            this.txtQuantidade.Size = new System.Drawing.Size(132, 22);
+            this.txtQuantidade.Size = new System.Drawing.Size(168, 40);
             this.txtQuantidade.TabIndex = 6;
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(559, 439);
+            this.btnNovo.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Location = new System.Drawing.Point(563, 574);
             this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(100, 47);
+            this.btnNovo.Size = new System.Drawing.Size(115, 68);
             this.btnNovo.TabIndex = 7;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
@@ -146,10 +154,11 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(681, 439);
+            this.btnSalvar.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(715, 574);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(100, 47);
+            this.btnSalvar.Size = new System.Drawing.Size(122, 68);
             this.btnSalvar.TabIndex = 8;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -157,10 +166,11 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(801, 439);
+            this.btnCalcular.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(866, 574);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(100, 47);
+            this.btnCalcular.Size = new System.Drawing.Size(122, 68);
             this.btnCalcular.TabIndex = 9;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -168,10 +178,11 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(924, 439);
+            this.btnSair.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(1016, 574);
             this.btnSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(100, 47);
+            this.btnSair.Size = new System.Drawing.Size(122, 68);
             this.btnSair.TabIndex = 10;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -179,16 +190,18 @@
             // 
             // cmbTamanho
             // 
+            this.cmbTamanho.Font = new System.Drawing.Font("Old English Text MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTamanho.FormattingEnabled = true;
-            this.cmbTamanho.Location = new System.Drawing.Point(90, 79);
+            this.cmbTamanho.Location = new System.Drawing.Point(189, 204);
             this.cmbTamanho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbTamanho.Name = "cmbTamanho";
-            this.cmbTamanho.Size = new System.Drawing.Size(180, 24);
+            this.cmbTamanho.Size = new System.Drawing.Size(181, 29);
             this.cmbTamanho.TabIndex = 11;
-            this.cmbTamanho.Text = "ESCOLHA O TAMANHO";
+            this.cmbTamanho.Text = "Escolha o Tamanho";
             // 
             // grpEscolhaTenis
             // 
+            this.grpEscolhaTenis.BackColor = System.Drawing.Color.Transparent;
             this.grpEscolhaTenis.Controls.Add(this.chkNocta);
             this.grpEscolhaTenis.Controls.Add(this.chkPuma);
             this.grpEscolhaTenis.Controls.Add(this.chkNewBalance);
@@ -201,22 +214,25 @@
             this.grpEscolhaTenis.Controls.Add(this.picAsics);
             this.grpEscolhaTenis.Controls.Add(this.picInitiator);
             this.grpEscolhaTenis.Controls.Add(this.picNocta);
-            this.grpEscolhaTenis.Location = new System.Drawing.Point(16, 169);
+            this.grpEscolhaTenis.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpEscolhaTenis.Location = new System.Drawing.Point(23, 254);
             this.grpEscolhaTenis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpEscolhaTenis.Name = "grpEscolhaTenis";
             this.grpEscolhaTenis.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grpEscolhaTenis.Size = new System.Drawing.Size(501, 352);
+            this.grpEscolhaTenis.Size = new System.Drawing.Size(501, 367);
             this.grpEscolhaTenis.TabIndex = 12;
             this.grpEscolhaTenis.TabStop = false;
             this.grpEscolhaTenis.Text = "Escolha seu tênis:";
+            this.grpEscolhaTenis.Enter += new System.EventHandler(this.grpEscolhaTenis_Enter);
             // 
             // chkNocta
             // 
             this.chkNocta.AutoSize = true;
+            this.chkNocta.Font = new System.Drawing.Font("Old English Text MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkNocta.Location = new System.Drawing.Point(8, 167);
             this.chkNocta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkNocta.Name = "chkNocta";
-            this.chkNocta.Size = new System.Drawing.Size(129, 20);
+            this.chkNocta.Size = new System.Drawing.Size(181, 26);
             this.chkNocta.TabIndex = 0;
             this.chkNocta.Text = "Nocta Hot Step II";
             this.chkNocta.UseVisualStyleBackColor = true;
@@ -224,10 +240,11 @@
             // chkPuma
             // 
             this.chkPuma.AutoSize = true;
+            this.chkPuma.Font = new System.Drawing.Font("Old English Text MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkPuma.Location = new System.Drawing.Point(375, 167);
             this.chkPuma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkPuma.Name = "chkPuma";
-            this.chkPuma.Size = new System.Drawing.Size(88, 20);
+            this.chkPuma.Size = new System.Drawing.Size(108, 26);
             this.chkPuma.TabIndex = 7;
             this.chkPuma.Text = "Puma 180";
             this.chkPuma.UseVisualStyleBackColor = true;
@@ -235,10 +252,11 @@
             // chkNewBalance
             // 
             this.chkNewBalance.AutoSize = true;
+            this.chkNewBalance.Font = new System.Drawing.Font("Old English Text MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkNewBalance.Location = new System.Drawing.Point(375, 325);
             this.chkNewBalance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkNewBalance.Name = "chkNewBalance";
-            this.chkNewBalance.Size = new System.Drawing.Size(79, 20);
+            this.chkNewBalance.Size = new System.Drawing.Size(108, 26);
             this.chkNewBalance.TabIndex = 6;
             this.chkNewBalance.Text = "NB 1000";
             this.chkNewBalance.UseVisualStyleBackColor = true;
@@ -279,10 +297,11 @@
             // chkAdidas
             // 
             this.chkAdidas.AutoSize = true;
+            this.chkAdidas.Font = new System.Drawing.Font("Old English Text MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAdidas.Location = new System.Drawing.Point(187, 325);
             this.chkAdidas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkAdidas.Name = "chkAdidas";
-            this.chkAdidas.Size = new System.Drawing.Size(130, 20);
+            this.chkAdidas.Size = new System.Drawing.Size(156, 26);
             this.chkAdidas.TabIndex = 3;
             this.chkAdidas.Text = "Adidas Harden 9";
             this.chkAdidas.UseVisualStyleBackColor = true;
@@ -290,10 +309,11 @@
             // chkAsics
             // 
             this.chkAsics.AutoSize = true;
+            this.chkAsics.Font = new System.Drawing.Font("Old English Text MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAsics.Location = new System.Drawing.Point(191, 167);
             this.chkAsics.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkAsics.Name = "chkAsics";
-            this.chkAsics.Size = new System.Drawing.Size(117, 20);
+            this.chkAsics.Size = new System.Drawing.Size(158, 26);
             this.chkAsics.TabIndex = 2;
             this.chkAsics.Text = "Asics NYC Gel";
             this.chkAsics.UseVisualStyleBackColor = true;
@@ -301,10 +321,11 @@
             // chkInitiator
             // 
             this.chkInitiator.AutoSize = true;
+            this.chkInitiator.Font = new System.Drawing.Font("Old English Text MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkInitiator.Location = new System.Drawing.Point(16, 322);
             this.chkInitiator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkInitiator.Name = "chkInitiator";
-            this.chkInitiator.Size = new System.Drawing.Size(102, 20);
+            this.chkInitiator.Size = new System.Drawing.Size(140, 26);
             this.chkInitiator.TabIndex = 1;
             this.chkInitiator.Text = "Nike Initiator";
             this.chkInitiator.UseVisualStyleBackColor = true;
@@ -344,46 +365,49 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(623, 169);
+            this.txtCodigo.Location = new System.Drawing.Point(563, 206);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
-            this.txtCodigo.Size = new System.Drawing.Size(132, 22);
+            this.txtCodigo.Size = new System.Drawing.Size(279, 22);
             this.txtCodigo.TabIndex = 13;
             // 
             // txtPesquisar
             // 
-            this.txtPesquisar.Location = new System.Drawing.Point(836, 169);
+            this.txtPesquisar.Location = new System.Drawing.Point(859, 206);
             this.txtPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(132, 22);
+            this.txtPesquisar.Size = new System.Drawing.Size(279, 22);
             this.txtPesquisar.TabIndex = 14;
             this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged);
             // 
             // lblPesquisar
             // 
             this.lblPesquisar.AutoSize = true;
-            this.lblPesquisar.Location = new System.Drawing.Point(847, 149);
+            this.lblPesquisar.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPesquisar.Location = new System.Drawing.Point(944, 178);
             this.lblPesquisar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPesquisar.Name = "lblPesquisar";
-            this.lblPesquisar.Size = new System.Drawing.Size(85, 16);
+            this.lblPesquisar.Size = new System.Drawing.Size(92, 24);
             this.lblPesquisar.TabIndex = 15;
-            this.lblPesquisar.Text = "PESQUISAR";
+            this.lblPesquisar.Text = "Pesquisar";
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(619, 149);
+            this.lblCodigo.Font = new System.Drawing.Font("Old English Text MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.Location = new System.Drawing.Point(665, 178);
             this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(59, 16);
+            this.lblCodigo.Size = new System.Drawing.Size(66, 24);
             this.lblCodigo.TabIndex = 16;
-            this.lblCodigo.Text = "CODIGO";
+            this.lblCodigo.Text = "Código";
             // 
             // Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1182, 673);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblPesquisar);
